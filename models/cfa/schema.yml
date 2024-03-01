@@ -2,24 +2,32 @@ version: 2
 
 models:
   - name: summary
+    description: |
+      Summary table containing information about articles, including their Level, Topic, Year, Number of articles, Min Length (Summary), Max Length (Summary), Min Length (Learning outcomes), Max Length (Learning outcomes).
     columns:
       - name: TITLE
+        description: title of the article
         tests:
           - not_null
           - unique
       - name: TOPIC
+        description: topic of the article
         tests:
           - not_null
       - name: PUBLISHED_YEAR
+        description: published year of the article, Must be one of the accepted values.
         tests:
           - accepted_values:
               values: [2018, 2019, 2020, 2021, 2022, 2023, 2024]
       - name: LEVEL
+        description: level of the article
         tests:
           - not_null
       - name: LEARNING_OUTCOMES
+        description: learning outcomes of the article
         tests:
           - not_null
       - name: LINK
+        description: redirect link of the article
         tests:
           - not_null
