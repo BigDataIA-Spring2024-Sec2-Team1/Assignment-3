@@ -10,7 +10,7 @@ Objective is to develop Python classes for validating and processing data from C
 Pydantic
 pytest
 DBT (Data Build Tool)
-   
+    
 ## Links
 Codelab: https://codelabs-preview.appspot.com/?file_id=1bOLtJd9YLoInM7W4p1JACNyj-XZh1Pkn0eEy6gx4R6U/edit?usp=sharing#0
 
