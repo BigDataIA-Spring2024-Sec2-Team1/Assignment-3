@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: refresher_readings
+    description: These are the summary of the CFA's Refresher readings
+    database: raw
+    schema: refresher_readings
+    tables:
+        - name: readings
+          description: Stores readings from CFA Website
