@@ -39,3 +39,5 @@ models:
   Assignment_3:
     cfa_summary:
       +materialized: table
+
+
