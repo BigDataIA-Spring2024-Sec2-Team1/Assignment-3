@@ -1,0 +1,25 @@
+version: 2
+
+models:
+  - name: summary
+    columns:
+      - name: TITLE
+        tests:
+          - not_null
+          - unique
+      - name: TOPIC
+        tests:
+          - not_null
+      - name: PUBLISHED_YEAR
+        tests:
+          - accepted_values:
+              values: [2018, 2019, 2020, 2021, 2022, 2023, 2024]
+      - name: LEVEL
+        tests:
+          - not_null
+      - name: LEARNING_OUTCOMES
+        tests:
+          - not_null
+      - name: LINK
+        tests:
+          - not_null
