@@ -1,10 +1,9 @@
 version: 2
-
 sources:
-  - name: refresher_readings
+  - name: 'refresher_readings_{{var("env")}}'
     description: These are the summary of the CFA's Refresher readings
     database: raw
-    schema: refresher_readings
+    schema: 'refresher_readings_{{var("env")}}'
     tables:
         - name: readings
           description: Stores readings from CFA Website

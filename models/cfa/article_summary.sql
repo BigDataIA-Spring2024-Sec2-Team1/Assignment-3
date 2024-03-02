@@ -7,5 +7,5 @@ SELECT
     MAX(LENGTH(summary)) AS max_summary_length,
     MIN(LENGTH(learning_outcomes)) AS min_learning_outcomes_length,
     MAX(LENGTH(learning_outcomes)) AS max_learning_outcomes_length
-FROM {{ source('refresher_readings', 'readings') }}
+FROM {{ source('refresher_readings_' ~ var('env'), 'readings') }}
 GROUP BY level, topic, published_year

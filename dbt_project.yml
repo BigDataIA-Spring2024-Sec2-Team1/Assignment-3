@@ -41,3 +41,5 @@ models:
       +materialized: table
 
 
+vars:
+  env: 'prod'
