@@ -49,7 +49,7 @@ Codelab: https://codelabs-preview.appspot.com/?file_id=1bOLtJd9YLoInM7W4p1JACNyj
 
 ## How to run Application locally
 
-Execute the files as per step numbers
+Install dependencies and execute the file present `Part1.ipynb` in pydantic folder
 
 ## References
 •	https://docs.getdbt.com/guides/snowflake?step=1Links to an external site.
